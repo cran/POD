@@ -5,7 +5,7 @@
 \title{Generate Plot to Analyze Single Lab PCR Outcomes}
 \usage{
 plotPOD(obj, model = c("auto", "simple", "full"), qLOD = 95,
-  show.ci = TRUE, show.warnings = FALSE)
+  show.ci = TRUE, show.warnings = FALSE, wmark = TRUE)
 }
 \arguments{
 \item{obj}{A list returned by \code{\link{analyzeSingleLab}}.}
@@ -17,6 +17,8 @@ plotPOD(obj, model = c("auto", "simple", "full"), qLOD = 95,
 \item{show.ci}{Show the confidence interval of the LOD in the plot.}
 
 \item{show.warnings}{Show the warning regarding significant deviation from \eqn{1} in the plot.}
+
+\item{wmark}{Logical. Show a watermark at the upper right corner of the plot.}
 }
 \value{
 The passed list 'obj' is returned invisibly.

@@ -1,8 +1,8 @@
 Package: POD
 Type: Package
 Title: Probability of Detection for Qualitative PCR Methods
-Version: 1.1.0
-Date: 2019-04-04
+Version: 1.1.4
+Date: 2019-06-11
 Author: Markus Boenn (State Office for Consumer Protection Saxony-Anhalt, Germany)
 Maintainer: Markus Boenn <markus.boenn.sf@gmail.com>
 Description: This tool computes the probability of detection (POD) curve and the limit of detection (LOD), i.e. the number of copies of the target DNA sequence required to ensure a 95 % probability of detection (LOD95). Other quantiles of the LOD can be specified.
@@ -14,6 +14,6 @@ Depends: R (>= 3.4.0)
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2019-04-04 08:58:36 UTC; boenn
+Packaged: 2019-06-11 08:11:30 UTC; boenn
 Repository: CRAN
-Date/Publication: 2019-04-15 06:12:38 UTC
+Date/Publication: 2019-06-11 08:20:02 UTC
