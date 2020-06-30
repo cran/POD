@@ -1,3 +1,18 @@
+POD v1.2.0 (Release date: 2019-10-09)
+==============
+
+Changes:
+
+## analyzeSingleLab
+
+-- user friendly handling and automated transformation of input data
+
+## plotPOD
+
+-- opportunity to add a unit to the LOD value
+
+
+
 POD v1.1.4 (Release date: 2019-06-11)
 ==============
 

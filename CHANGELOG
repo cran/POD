@@ -1,4 +1,23 @@
 
+
+# [191009] Markus Boenn
+Version bump: 1.2.0
+## analyzeSingleLab
+
+- automatic setting of input column names
+- automatic adjustment of decimal comma
+
+## printPod
+
+- check class of input object
+
+## plotPOD
+
+- check class of input object
+- optional addition of a unit to the LOD value
+- helper lines in gray80, lwd=0.5
+
+
 # [190611] Markus Boenn
 Version bump: 1.1.4
 ## Excel macro

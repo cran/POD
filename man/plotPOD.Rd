@@ -5,7 +5,9 @@
 \title{Generate Plot to Analyze Single Lab PCR Outcomes}
 \usage{
 plotPOD(obj, model = c("auto", "simple", "full"), qLOD = 95,
-  show.ci = TRUE, show.warnings = FALSE, wmark = TRUE)
+  show.ci = TRUE, show.warnings = FALSE, wmark = TRUE, unit = "",
+  xlim = NULL, .title = list(main = "", xlab = "Number of DNA copies",
+  ylab = "POD and ROD"))
 }
 \arguments{
 \item{obj}{A list returned by \code{\link{analyzeSingleLab}}.}
@@ -19,6 +21,12 @@ plotPOD(obj, model = c("auto", "simple", "full"), qLOD = 95,
 \item{show.warnings}{Show the warning regarding significant deviation from \eqn{1} in the plot.}
 
 \item{wmark}{Logical. Show a watermark at the upper right corner of the plot.}
+
+\item{unit}{A string indicating the unit of the data.}
+
+\item{xlim}{A numeric vector indicating the limits of the x-axis.}
+
+\item{.title}{A list with same arguments as function \code{\link{title}}. Customization of the figure.}
 }
 \value{
 The passed list 'obj' is returned invisibly.
@@ -34,6 +42,8 @@ If model is set to "auto", a plausiblity test is applied to determine if the POD
 Three cases can be distinguished. First, the value for the slope parameter b is significantly less than \eqn{1}. This means the average amplification probability is higher at higher dilution levels than at lower dilution levels. Such a situation can be related to: inhibitory matrix effects, a large variability in the amplification process from the one test to another under repeatability conditions, or accidental problems causing false positives if the number of copies of the target DNA sequence is less than \eqn{1}. Second, the calculated POD curve indicates sensitivity better than achievable according to the theoretical POD curve. Third, the number of positive test results is significantly higher than expected at nominal copies of nominal DNA concentrations in \eqn{[0.5,1.5]}. In this case check the correctness of the serial dilution.
 
 Another warning appears if the LOD of interest exceeds the highest number of considered nominal copies.
+
+The unit is add to the LOD value, in front of the confidence intervall.
 }
 \examples{
 x <- cbind(
